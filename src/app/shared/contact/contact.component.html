@@ -1,142 +1,105 @@
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mt-4 pt-2">
-        <div class="card shadow rounded border-0">
-          <div class="card-body py-5">
-            <h4 class="card-title">Contáctenos</h4>
-            <div class="custom-form mt-3">
-              <form
-                method="post"
-                name="myForm"
-                onsubmit="return validateForm()"
+<div class="card shadow rounded border-0">
+  <div class="card-body py-5">
+    <h4 class="card-title">Contáctenos</h4>
+    <div class="custom-form mt-3">
+      <form method="post" name="myForm" onsubmit="return validateForm()">
+        <p id="error-msg" class="mb-0"></p>
+        <div id="simple-msg"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mb-3">
+              <label class="form-label"
+                >Nombre Completo<span class="text-danger">*</span></label
               >
-                <p id="error-msg" class="mb-0"></p>
-                <div id="simple-msg"></div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <label class="form-label"
-                        >Nombre Completo<span class="text-danger"
-                          >*</span
-                        ></label
-                      >
-                      <div class="form-icon position-relative">
-                        <i-feather
-                          name="user"
-                          class="fea icon-sm icons"
-                        ></i-feather>
-                        <input
-                          name="name"
-                          id="name"
-                          type="text"
-                          class="form-control ps-5"
-                          placeholder="Nombre Completo:"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label class="form-label"
-                        >Email<span class="text-danger">*</span></label
-                      >
-                      <div class="form-icon position-relative">
-                        <i-feather
-                          name="mail"
-                          class="fea icon-sm icons"
-                        ></i-feather>
-                        <input
-                          name="email"
-                          id="email"
-                          type="email"
-                          class="form-control ps-5"
-                          placeholder="Email :"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label class="form-label"
-                        >Teléfono<span class="text-danger">*</span></label
-                      >
-                      <div class="form-icon position-relative">
-                        <i-feather
-                          name="phone"
-                          class="fea icon-sm icons"
-                        ></i-feather>
-                        <input
-                          name="phone"
-                          id="phone"
-                          type="text"
-                          class="form-control ps-5"
-                          placeholder="Teléfono :"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!--end col-->
-
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label class="form-label">Mensaje</label>
-                      <div class="form-icon position-relative">
-                        <i-feather
-                          name="message-circle"
-                          class="fea icon-sm icons clearfix"
-                        ></i-feather>
-                        <textarea
-                          name="comments"
-                          id="comments"
-                          rows="4"
-                          class="form-control ps-5"
-                          placeholder="Mensaje :"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="d-grid">
-                      <button
-                        type="submit"
-                        id="submit"
-                        name="send"
-                        class="btn btn-primary"
-                      >
-                        Enviar Mensaje
-                      </button>
-                    </div>
-                  </div>
-                  <!--end col-->
-                </div>
-                <!--end row-->
-              </form>
+              <div class="form-icon position-relative">
+                <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  class="form-control ps-5"
+                  placeholder="Nombre Completo:"
+                />
+              </div>
             </div>
-            <!--end custom-form-->
           </div>
-        </div>
-      </div>
-      <!--end col-->
 
-      <div class="col-lg-8 col-md-6 ps-md-3 pr-md-3 mt-4 pt-2">
-        <div class="card map map-height-two rounded map-gray border-0">
-          <div class="card-body p-0">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.699649591425!2d-58.4497557!3d-34.6123811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4fb8dfb77cc8e57!2sInstituto%20Modelo%20Proyecto%202000!5e0!3m2!1ses-419!2sar!4v1643666171068!5m2!1ses-419!2sar"
-              style="border: 0"
-              class="rounded"
-              allowfullscreen=""
-            ></iframe>
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label"
+                >Email<span class="text-danger">*</span></label
+              >
+              <div class="form-icon position-relative">
+                <i-feather name="mail" class="fea icon-sm icons"></i-feather>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="form-control ps-5"
+                  placeholder="Email :"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label"
+                >Teléfono<span class="text-danger">*</span></label
+              >
+              <div class="form-icon position-relative">
+                <i-feather name="phone" class="fea icon-sm icons"></i-feather>
+                <input
+                  name="phone"
+                  id="phone"
+                  type="text"
+                  class="form-control ps-5"
+                  placeholder="Teléfono :"
+                />
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <div class="form-icon position-relative">
+                <i-feather
+                  name="message-circle"
+                  class="fea icon-sm icons clearfix"
+                ></i-feather>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  rows="4"
+                  class="form-control ps-5"
+                  placeholder="Mensaje :"
+                ></textarea>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--end col-->
+        <div class="row">
+          <div class="col-12">
+            <div class="d-grid">
+              <button
+                type="submit"
+                id="submit"
+                name="send"
+                class="btn btn-primary"
+              >
+                Enviar Mensaje
+              </button>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </form>
     </div>
-    <!--end row-->
+    <!--end custom-form-->
   </div>
-  <!--end container-->
-</section>
+</div>
+<!--end col-->
+
+

@@ -121,7 +121,8 @@
       <div class="section-title mb-4 pb-2">
         <h4 class="title mb-4">20 Años al Servicio de la Educación</h4>
         <p class="text-muted para-desc mb-0 mx-auto">
-          Modalidad de grupos reducidos que favorecen la <span class="text-primary fw-bold">atención personalizada</span>
+          Modalidad de grupos reducidos que favorecen la
+          <span class="text-primary fw-bold">atención personalizada</span>
         </p>
       </div>
     </div>
@@ -130,16 +131,19 @@
   <!--end row-->
 
   <div class="row">
-    <div *ngFor="let item of services" class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+    <div
+      *ngFor="let item of services"
+      class="col-lg-4 col-md-6 col-12 mt-4 pt-2"
+    >
       <div class="card bg-light rounded shadow border-0">
         <div class="card-body py-5">
           <i [ngClass]="item.icon" class="h1 text-primary"></i>
           <div class="mt-2">
             <h5 class="card-title text-primary">
-              {{item.title}}
+              {{ item.title }}
             </h5>
             <p class="text-muted mt-3 mb-0">
-              {{item.content}}
+              {{ item.content }}
             </p>
           </div>
         </div>
@@ -152,7 +156,27 @@
 <!--end container-->
 <!-- Features End -->
 
-<contact></contact>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mt-4 pt-2">
+        <contact></contact>
+      </div>
+      <div class="col-lg-8 col-md-6 ps-md-3 pr-md-3 mt-4 pt-2">
+        <div class="card map map-height-two rounded map-gray border-0">
+          <div class="card-body p-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.699649591425!2d-58.4497557!3d-34.6123811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4fb8dfb77cc8e57!2sInstituto%20Modelo%20Proyecto%202000!5e0!3m2!1ses-419!2sar!4v1643666171068!5m2!1ses-419!2sar"
+              style="border: 0"
+              class="rounded"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- <section class="section">
   <div class="container mt-100 mt-60">
