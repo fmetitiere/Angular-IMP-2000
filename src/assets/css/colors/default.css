@@ -34,7 +34,7 @@
 .form-check-input.form-check-input:checked,
 .qs-datepicker-container .qs-squares .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover, 
 .qs-datepicker-container .qs-squares .qs-square.qs-current {
-    background-color: #2f55d4 !important;
+    background-color: #b6141a !important;
 }
 
 .text-primary,
@@ -94,7 +94,7 @@
 .accordion .accordion-button:not(.collapsed),
 .accordion .accordion-item .accordion-button:before,
 #navmenu-nav li.active a {
-    color: #2f55d4 !important;
+    color: #b6141a !important;
 }
 
 .btn-primary,
@@ -128,7 +128,7 @@
 .pricing-rates.starter-plan,
 .event-schedule:hover,
 .container-filter li.active, .container-filter li:hover{
-    border-color: #2f55d4 !important;
+    border-color: #b6141a !important;
 }
 
 .bg-soft-primary,
@@ -172,7 +172,7 @@
 .btn-outline-primary.active, 
 .btn-outline-primary.focus, 
 .btn-outline-primary:not(:disabled):not(.disabled):active {
-    box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(182, 20, 26, 0.3);
 }
 
 .alert-primary,
@@ -183,11 +183,11 @@
 }
 
 .social-icon li a:hover .fea-social {
-    fill: #2f55d4;
+    fill: #b6141a;
 }
 
 .bg-circle-gradiant {
-    background: radial-gradient(circle at 50% 50%, rgba(47, 85, 212, 0.1) 0%, rgba(47, 85, 212, 0.1) 33.333%, rgba(47, 85, 212, 0.3) 33.333%, rgba(47, 85, 212, 0.3) 66.666%, rgba(47, 85, 212, 0.5) 66.666%, rgba(47, 85, 212, 0.5) 99.999%);
+    background: radial-gradient(circle at 50% 50%, rgba(47, 85, 212, 0.1) 0%, rgba(47, 85, 212, 0.1) 33.333%, rgba(182, 20, 26, 0.3) 33.333%, rgba(182, 20, 26, 0.3) 66.666%, rgba(47, 85, 212, 0.5) 66.666%, rgba(47, 85, 212, 0.5) 99.999%);
 }
 
 .tns-nav button {
@@ -213,18 +213,18 @@
 }
 
 .home-wrapper:before {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 85, 212, 0.3)), to(transparent));
-    background: linear-gradient(90deg, rgba(47, 85, 212, 0.3), transparent);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(182, 20, 26, 0.3)), to(transparent));
+    background: linear-gradient(90deg, rgba(182, 20, 26, 0.3), transparent);
 }
 
 .play-icon i {
-    -webkit-text-stroke: 2px #2f55d4;
+    -webkit-text-stroke: 2px #b6141a;
     -webkit-text-fill-color: transparent;
 }
 
 .play-icon i:hover {
-    -webkit-text-stroke: 2px #2f55d4;
-    -webkit-text-fill-color: #2f55d4;
+    -webkit-text-stroke: 2px #b6141a;
+    -webkit-text-fill-color: #b6141a;
 }
 a.text-primary:hover, 
 a.text-primary:focus {
