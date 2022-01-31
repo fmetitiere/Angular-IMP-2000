@@ -38,7 +38,7 @@ export class IndexComponent implements OnInit {
       title: "INSCRIPCIONES ABIERTAS! CICLO LECTIVO 2022",
       content: "TRANSFORMANDO EL PRESENTE CONSTRUYENDO EL FUTURO",
       image: "assets/images/school-front.jpg",
-      linkLabel: "Contactanos",
+      linkLabel: "Contáctanos",
       linkUrl: "/contact",
     },
     {
