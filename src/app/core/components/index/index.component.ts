@@ -72,6 +72,24 @@ export class IndexComponent implements OnInit {
     }
   ];
 
+  services: CardsHome[] = [
+    {
+      title: "PERSONAL CON GRAN CALIDAD HUMANA E IDONEIDAD PROFESIONAL",
+      content: "La escuela cuenta con excelentes maestros de enseñanza especial, capaces de adaptarse a las dificultades de cada niño a través de prácticas didácticas de la educación infantil.",
+      icon: "uil uil-user-square"
+    },
+    {
+      title: "CUIDADO Y CONTENCIÓN",
+      content: "Además de las materias curriculares, nuestros maestros están capacitados para brindar la contención y confianza necesaria para que el alumno adquiera autonomía y buena integración grupal.",
+      icon: "uil uil-heart"
+    },
+    {
+      title: "RESPETO POR LAS DIFERENCIAS Y FORMACIÓN NTEGRAL",
+      content: "Contamos con una educación integral, inclusiva y de calidad, fomentando una cultura de paz a través del desarrollo de los valores.",
+      icon: "uil uil-star"
+    }
+  ];
+
   /**
    * Client Testimonial Data
    */

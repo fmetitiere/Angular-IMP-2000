@@ -53,7 +53,10 @@
       <div class="col-lg-12">
         <div class="features-absolute">
           <div class="row">
-            <div *ngFor="let item of cards" class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+            <div
+              *ngFor="let item of cards"
+              class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0"
+            >
               <div
                 class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center"
               >
@@ -82,42 +85,7 @@
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <img
-            src="assets/images/company/about2.png"
-            class="img-fluid mx-auto"
-            alt=""
-          />
-          <div class="play-icon">
-            <a
-              (click)="openModal(contentmodal)"
-              href="javascript:void(0);"
-              class="play-btn video-play-icon"
-            >
-              <i
-                class="mdi mdi-play text-primary rounded-circle bg-white shadow"
-              ></i>
-            </a>
-            <ng-template #contentmodal let-modal>
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  (click)="modal.dismiss('Cross click')"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <youtube-player
-                  [videoId]="'yba7hPeTSjk'"
-                  height="450"
-                  width="780"
-                >
-                </youtube-player>
-              </div>
-            </ng-template>
-          </div>
+          <img src="assets/images/about.jpg" class="img-fluid mx-auto" alt="" />
         </div>
       </div>
       <!--end col-->
@@ -125,22 +93,17 @@
       <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="section-title ms-lg-4">
           <h4 class="title mb-4">
-            We are the largest <br />
-            Business expert
+            CONFORMAMOS UNA SOCIEDAD SIN FINES DE LUCRO
           </h4>
           <p class="text-muted">
-            Start working with
-            <span class="text-primary fw-bold">Landrick</span> that can provide
-            everything you need to generate awareness, drive traffic, connect.
-            Dummy text is text that is used in the publishing industry or by web
-            designers to occupy the space which will later be filled with 'real'
-            content. This is required when, for example, the final text is not
-            yet available. Dummy texts have been in use by typesetters since the
-            16th century.
+            "Con un objetivo fundamental de
+            <span class="text-primary fw-bold"
+              >integracion social, aceptacion y respeto</span
+            >
+            de las diferencias" directivos y docentes nos esforzamos para que
+            los alumnos adquieran los contenidos curriculares de la escuela
+            primaria y mejorar su calidad de vida."
           </p>
-          <a href="javascript:void(0)" class="btn btn-primary mt-3"
-            >Buy Now <i class="mdi mdi-chevron-right"></i
-          ></a>
         </div>
       </div>
       <!--end col-->
@@ -156,11 +119,9 @@
   <div class="row justify-content-center">
     <div class="col-12 text-center">
       <div class="section-title mb-4 pb-2">
-        <h4 class="title mb-4">Payments Great Features</h4>
+        <h4 class="title mb-4">20 Años al Servicio de la Educación</h4>
         <p class="text-muted para-desc mb-0 mx-auto">
-          Start working with
-          <span class="text-primary fw-bold">Landrick</span> that can provide
-          everything you need to generate awareness, drive traffic, connect.
+          Modalidad de grupos reducidos que favorecen la <span class="text-primary fw-bold">atención personalizada</span>
         </p>
       </div>
     </div>
@@ -169,77 +130,16 @@
   <!--end row-->
 
   <div class="row">
-    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+    <div *ngFor="let item of services" class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
       <div class="card bg-light rounded shadow border-0">
         <div class="card-body py-5">
-          <i class="uil uil-rupee-sign h1 text-primary"></i>
+          <i [ngClass]="item.icon" class="h1 text-primary"></i>
           <div class="mt-2">
-            <h5 class="card-title">
-              <a href="javascript:void(0)" class="text-primary"> Low Fees</a>
+            <h5 class="card-title text-primary">
+              {{item.title}}
             </h5>
             <p class="text-muted mt-3 mb-0">
-              If the distribution of letters and 'words' is random, the reader
-              will not be distracted.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end col-->
-
-    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-      <div class="card bg-light rounded shadow border-0">
-        <div class="card-body py-5">
-          <i class="uil uil-shield h1 text-primary"></i>
-          <div class="mt-2">
-            <h5 class="card-title">
-              <a href="javascript:void(0)" class="text-primary">
-                Safe & Secure</a
-              >
-            </h5>
-            <p class="text-muted mt-3 mb-0">
-              For this reason, dummy text usually consists of a more or less
-              random series of words.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end col-->
-
-    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-      <div class="card bg-light rounded shadow border-0">
-        <div class="card-body py-5">
-          <i class="uil uil-headphones h1 text-primary"></i>
-          <div class="mt-2">
-            <h5 class="card-title">
-              <a href="javascript:void(0)" class="text-primary">
-                Amazing Support</a
-              >
-            </h5>
-            <p class="text-muted mt-3 mb-0">
-              This prevents repetitive patterns from impairing the overall
-              visual impression.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end col-->
-
-    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-      <div class="card bg-light rounded shadow border-0">
-        <div class="card-body py-5">
-          <i class="uil uil-exchange h1 text-primary"></i>
-          <div class="mt-2">
-            <h5 class="card-title">
-              <a href="javascript:void(0)" class="text-primary">
-                Convenient & Easy</a
-              >
-            </h5>
-            <p class="text-muted mt-3 mb-0">
-              It is advantageous when the dummy text is relatively realistic so
-              that the layout.
+              {{item.content}}
             </p>
           </div>
         </div>
