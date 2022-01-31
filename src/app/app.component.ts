@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'landrick-angular';
+  title = 'imp-2000';
 
   constructor(private router: Router) {
     /**

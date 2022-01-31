@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 class AppComponent {
     constructor(router) {
         this.router = router;
-        this.title = 'landrick-angular';
+        this.title = 'imp-2000';
         /**
          * Unicons icon refreshed on route change.
          */

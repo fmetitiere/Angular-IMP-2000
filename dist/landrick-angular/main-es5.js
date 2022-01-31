@@ -219,7 +219,7 @@
         _classCallCheck(this, _AppComponent);
 
         this.router = router;
-        this.title = 'landrick-angular';
+        this.title = 'imp-2000';
         /**
          * Unicons icon refreshed on route change.
          */
