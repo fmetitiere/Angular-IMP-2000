@@ -125,5 +125,7 @@ export class IndexComponent implements OnInit {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 
-
+  mapView(content) {
+    this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true })
+  }
 }
