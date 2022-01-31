@@ -4,9 +4,11 @@
   class="swiper-slider-hero position-relative d-block vh-100"
   id="home"
 >
-  <div *ngFor="let item of carousel" class="swiper-slide d-flex align-items-center overflow-hidden">
+  <div
+    *ngFor="let item of carousel"
+    class="swiper-slide d-flex align-items-center overflow-hidden"
+  >
     <div
-      
       class="slide-inner slide-bg-image d-flex align-items-center"
       style="background: center center no-repeat; background-size: cover"
       [ngStyle]="carouselBg(item.image)"
@@ -51,107 +53,19 @@
       <div class="col-lg-12">
         <div class="features-absolute">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
+            <div *ngFor="let item of cards" class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
               <div
                 class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center"
               >
                 <div class="icons text-primary text-center mx-auto">
-                  <i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+                  <i [ngClass]="item.icon" class="d-block rounded h3 mb-0"></i>
                 </div>
 
                 <div class="card-body p-0 content">
-                  <h5 class="mt-4">
-                    <a href="javascript:void(0)" class="title text-dark"
-                      >Best Financial Advice</a
-                    >
-                  </h5>
+                  <h5 class="mt-4 title text-dark">{{ item.title }}</h5>
                   <p class="text-muted">
-                    The most well-known which is said to have originated
+                    {{ item.content }}
                   </p>
-
-                  <a href="javascript:void(0)" class="text-primary"
-                    >Read More <i class="uil uil-angle-right-b align-middle"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0 pt-2 pt-md-0">
-              <div
-                class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center"
-              >
-                <div class="icons text-primary text-center mx-auto">
-                  <i class="uil uil-clipboard-alt d-block rounded h3 mb-0"></i>
-                </div>
-
-                <div class="card-body p-0 content">
-                  <h5 class="mt-4">
-                    <a href="javascript:void(0)" class="title text-dark"
-                      >Authorised Finance Brand</a
-                    >
-                  </h5>
-                  <p class="text-muted">
-                    The most well-known which is said to have originated
-                  </p>
-
-                  <a href="javascript:void(0)" class="text-primary"
-                    >Read More <i class="uil uil-angle-right-b align-middle"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
-              <div
-                class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center"
-              >
-                <div class="icons text-primary text-center mx-auto">
-                  <i
-                    class="uil uil-credit-card-search d-block rounded h3 mb-0"
-                  ></i>
-                </div>
-
-                <div class="card-body p-0 content">
-                  <h5 class="mt-4">
-                    <a href="javascript:void(0)" class="title text-dark"
-                      >Compehensive Advices</a
-                    >
-                  </h5>
-                  <p class="text-muted">
-                    The most well-known which is said to have originated
-                  </p>
-
-                  <a href="javascript:void(0)" class="text-primary"
-                    >Read More <i class="uil uil-angle-right-b align-middle"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
-              <div
-                class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center"
-              >
-                <div class="icons text-primary text-center mx-auto">
-                  <i class="uil uil-ruler-combined d-block rounded h3 mb-0"></i>
-                </div>
-
-                <div class="card-body p-0 content">
-                  <h5 class="mt-4">
-                    <a href="javascript:void(0)" class="title text-dark"
-                      >Best Tax Advantages</a
-                    >
-                  </h5>
-                  <p class="text-muted">
-                    The most well-known which is said to have originated
-                  </p>
-
-                  <a href="javascript:void(0)" class="text-primary"
-                    >Read More <i class="uil uil-angle-right-b align-middle"></i
-                  ></a>
                 </div>
               </div>
             </div>

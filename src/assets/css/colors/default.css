@@ -143,12 +143,12 @@
 .social-feature-left:after,
 .social-feature-right:after,
 .event-schedule .date .day {
-    background-color: rgba(47, 85, 212, 0.1) !important;
+    background-color: rgba(182, 20, 26, 0.1) !important;
 }
 
 .bg-soft-primary,
 .btn-soft-primary {
-    border: 1px solid rgba(47, 85, 212, 0.1) !important;
+    border: 1px solid rgba(182, 20, 26, 0.1) !important;
 }
 
 .app-feature-shape-right:after,
@@ -157,7 +157,7 @@
 .saas-feature-shape-right:after,
 .social-feature-left:after,
 .social-feature-right:after {
-    box-shadow: 0 0 40px rgba(47, 85, 212, 0.1);
+    box-shadow: 0 0 40px rgba(182, 20, 26, 0.1);
 }
 
 .event-schedule .date .day {
@@ -187,7 +187,7 @@
 }
 
 .bg-circle-gradiant {
-    background: radial-gradient(circle at 50% 50%, rgba(47, 85, 212, 0.1) 0%, rgba(47, 85, 212, 0.1) 33.333%, rgba(182, 20, 26, 0.3) 33.333%, rgba(182, 20, 26, 0.3) 66.666%, rgba(47, 85, 212, 0.5) 66.666%, rgba(47, 85, 212, 0.5) 99.999%);
+    background: radial-gradient(circle at 50% 50%, rgba(182, 20, 26, 0.1) 0%, rgba(182, 20, 26, 0.1) 33.333%, rgba(182, 20, 26, 0.3) 33.333%, rgba(182, 20, 26, 0.3) 66.666%, rgba(47, 85, 212, 0.5) 66.666%, rgba(47, 85, 212, 0.5) 99.999%);
 }
 
 .tns-nav button {
@@ -209,7 +209,7 @@
 }
 
 .features .image:before {
-    background: linear-gradient(45deg, transparent, rgba(47, 85, 212, 0.1));
+    background: linear-gradient(45deg, transparent, rgba(182, 20, 26, 0.1));
 }
 
 .home-wrapper:before {
@@ -236,16 +236,16 @@ a.text-primary:focus {
 .btn-primary:active, 
 .btn-primary.active, 
 .btn-primary.focus {
-    background-color: #2443ac !important;
-    border-color: #2443ac !important;
+    background-color: #87080d !important;
+    border-color: #87080d !important;
 }
 
 .ribbon.ribbon-primary span:before {
-    border-left-color: #2443ac;
-    border-top-color: #2443ac;
+    border-left-color: #87080d;
+    border-top-color: #87080d;
 }
 
 .ribbon.ribbon-primary span:after {
-    border-right-color: #2443ac;
-    border-top-color: #2443ac;
+    border-right-color: #87080d;
+    border-top-color: #87080d;
 }

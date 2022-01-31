@@ -82,3 +82,14 @@ body * {
 .swiper-button-prev:hover{
     border-radius: 50%;
 }
+
+#topnav .logo .l-light, #topnav .logo .logo-light-mode, #topnav.nav-sticky .logo .l-dark {
+    width: 3rem;
+    display: inline-block;
+    height: auto;
+}
+
+.swiper-slider-hero .swiper-container .swiper-button-prev:hover, .swiper-slider-hero .swiper-container .swiper-button-next:hover {
+    background: #b6141a;
+    border-color: #b6141a !important;
+}

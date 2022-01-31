@@ -5,3 +5,9 @@ export interface Carousel {
   linkUrl?: string;
   image: string;
 }
+
+export interface CardsHome {
+  title: string;
+  content: string;
+  icon: string;
+}

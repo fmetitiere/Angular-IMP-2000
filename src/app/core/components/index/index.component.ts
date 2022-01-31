@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { NgbCarouselConfig } from "@ng-bootstrap/ng-bootstrap";
 import { SwiperOptions } from "swiper";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { Carousel } from "src/app/modules/data.module";
+import { Carousel, CardsHome } from "src/app/modules/data.module";
 
 @Component({
   selector: "app-index",
@@ -23,6 +23,10 @@ export class IndexComponent implements OnInit {
   public config: SwiperOptions = {
     a11y: { enabled: true },
     direction: "horizontal",
+    autoplay: false,
+    loop: true,
+    parallax: true,
+    speed: 1500,
     slidesPerView: 1,
     keyboard: true,
     navigation: true,
@@ -43,6 +47,29 @@ export class IndexComponent implements OnInit {
         "Incorporado A LA ENSEÑANZA OFICIAL A-1334, DESDE SU FUNDACIÓN EL COLEGIO RECIBE NIÑOS/AS Y ADOLESCENTES CON NECESIDADES EDUCATIVAS ESPECIALES O DIFICULTADES EN EL APRENDIZAJE, DESARROLLANDO PROPUESTAS PEDAGÓGICAS, ADECUADAS A LAS NECESIDADES PARTICULARES DE CADA UNO DE ELLOS.",
       image: "assets/images/school-childrens.jpg"
     },
+  ];
+
+  cards: CardsHome[] = [
+    {
+      title: "ACTIVIDADES",
+      content: "La jornada de los alumnos comprende actividades formativas y recreativas.",
+      icon: "uil uil-schedule"
+    },
+    {
+      title: "ACTIVIDADES ESPECIALES",
+      content: "Computación, Musicoterapia, Psicomotricidad, Ingles",
+      icon: "uil uil-basketball"
+    },
+    {
+      title: "TALLERES",
+      content: "Experimentando diferentes técnicas y el contacto con distintos materiales",
+      icon: "uil uil-palette"
+    },
+    {
+      title: "GABINETES",
+      content: "Psicología, Foniatría, Supervisión Pedagóca, Orientación para Padres",
+      icon: "uil uil-comment-alt-heart"
+    }
   ];
 
   /**
