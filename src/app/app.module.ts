@@ -42,6 +42,7 @@ import { allIcons } from "angular-feather/icons";
 import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { SwitcherComponent } from "./shared/switcher/switcher.component";
+import { ContactComponent } from "./shared/contact/contact.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -54,6 +55,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ContactComponent,
     MasterPageComponent,
     IndexComponent,
     PageAboutusComponent,
