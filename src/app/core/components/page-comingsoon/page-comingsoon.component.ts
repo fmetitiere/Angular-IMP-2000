@@ -22,7 +22,7 @@ export class PageComingsoonComponent implements OnInit {
   _minutes: number;
   _seconds: number;
   ngOnInit(): void {
-    this._trialEndsAt = "2022-12-24";
+    this._trialEndsAt = '2022-12-24';
 
     interval(3000).pipe(
       map((x) => {

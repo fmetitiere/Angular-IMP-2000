@@ -14,8 +14,8 @@ export class FooterComponent implements OnInit {
   @Input() footerVariant: string;
   @Input() hideFooter: boolean;
 
-  //Get Year
-  year = new Date().getFullYear()
+  // Get Year
+  year = new Date().getFullYear();
 
   constructor() { }
 

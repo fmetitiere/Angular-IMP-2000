@@ -18,6 +18,6 @@ export class PageContactTwoComponent implements OnInit {
   }
 
   mapView(content) {
-    this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true })
+    this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 }

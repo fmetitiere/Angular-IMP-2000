@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
  */
 export class EmailConfirmationComponent implements OnInit {
 
-  //Get Year
+  // Get Year
   year = new Date().getFullYear();
 
   constructor() { }

@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
-export class BlogComponent implements OnInit { 
+export class BlogComponent implements OnInit {
 
   @Input() blogData: Array<{
     image: string;
