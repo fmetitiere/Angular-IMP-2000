@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/imp-2000",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -32,7 +32,7 @@
             "extractLicenses": false,
             "buildOptimizer": false,
             "sourceMap": true,
-            "optimization": false,
+            "optimization": { "scripts": true, "styles": { "minify": true, "inlineCritical": false }, "fonts": true },
             "namedChunks": true
           },
           "configurations": {
@@ -43,13 +43,13 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": { "scripts": true, "styles": { "minify": true, "inlineCritical": false }, "fonts": true },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
+              "buildOptimizer": false,
               "budgets": [
                 {
                   "type": "initial",
