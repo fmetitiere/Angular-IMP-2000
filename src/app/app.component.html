@@ -1,5 +1,9 @@
-<router-outlet></router-outlet>
-
-<modal-outlet></modal-outlet>
-
-<app-carousel></app-carousel>
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light transition" *ngIf="loading">
+  <img
+    src="assets/images/logo-dark.png"
+    class=""
+    height="200"
+    alt=""
+  />
+</div>
+<router-outlet *ngIf="!loading"></router-outlet>
