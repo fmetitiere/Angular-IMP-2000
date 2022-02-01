@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { NgbCarouselConfig } from "@ng-bootstrap/ng-bootstrap";
 import { SwiperOptions } from "swiper";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { OwlOptions } from "ngx-owl-carousel-o";
 import { Carousel, CardsHome } from "src/app/modules/data.module";
 
 @Component({
@@ -33,6 +34,22 @@ export class IndexComponent implements OnInit {
     pagination: false,
   };
 
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    autoplay: true,
+    navSpeed: 700,
+    navText: ["", ""],
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+    nav: false,
+  };
+
   carousel: Carousel[] = [
     {
       title: "INSCRIPCIONES ABIERTAS! CICLO LECTIVO 2022",
@@ -45,90 +62,78 @@ export class IndexComponent implements OnInit {
       title: "Instituto Modelo Proyecto 2000",
       content:
         "Incorporado A LA ENSEÑANZA OFICIAL A-1334, DESDE SU FUNDACIÓN EL COLEGIO RECIBE NIÑOS/AS Y ADOLESCENTES CON NECESIDADES EDUCATIVAS ESPECIALES O DIFICULTADES EN EL APRENDIZAJE, DESARROLLANDO PROPUESTAS PEDAGÓGICAS, ADECUADAS A LAS NECESIDADES PARTICULARES DE CADA UNO DE ELLOS.",
-      image: "assets/images/school-childrens.jpg"
+      image: "assets/images/school-childrens.jpg",
     },
   ];
 
   cards: CardsHome[] = [
     {
       title: "ACTIVIDADES",
-      content: "La jornada de los alumnos comprende actividades formativas y recreativas.",
-      icon: "uil uil-schedule"
+      content:
+        "La jornada de los alumnos comprende actividades formativas y recreativas.",
+      icon: "uil uil-schedule",
     },
     {
       title: "ACTIVIDADES ESPECIALES",
       content: "Computación, Musicoterapia, Psicomotricidad, Ingles",
-      icon: "uil uil-basketball"
+      icon: "uil uil-basketball",
     },
     {
       title: "TALLERES",
-      content: "Experimentando diferentes técnicas y el contacto con distintos materiales",
-      icon: "uil uil-palette"
+      content:
+        "Experimentando diferentes técnicas y el contacto con distintos materiales",
+      icon: "uil uil-palette",
     },
     {
       title: "GABINETES",
-      content: "Psicología, Foniatría, Supervisión Pedagóca, Orientación para Padres",
-      icon: "uil uil-comment-alt-heart"
-    }
+      content:
+        "Psicología, Foniatría, Supervisión Pedagóca, Orientación para Padres",
+      icon: "uil uil-comment-alt-heart",
+    },
   ];
 
   services: CardsHome[] = [
     {
       title: "PERSONAL CON GRAN CALIDAD HUMANA E IDONEIDAD PROFESIONAL",
-      content: "La escuela cuenta con excelentes maestros de enseñanza especial, capaces de adaptarse a las dificultades de cada niño a través de prácticas didácticas de la educación infantil.",
-      icon: "uil uil-user-square"
+      content:
+        "La escuela cuenta con excelentes maestros de enseñanza especial, capaces de adaptarse a las dificultades de cada niño a través de prácticas didácticas de la educación infantil.",
+      icon: "uil uil-user-square",
     },
     {
       title: "CUIDADO Y CONTENCIÓN",
-      content: "Además de las materias curriculares, nuestros maestros están capacitados para brindar la contención y confianza necesaria para que el alumno adquiera autonomía y buena integración grupal.",
-      icon: "uil uil-heart"
+      content:
+        "Además de las materias curriculares, nuestros maestros están capacitados para brindar la contención y confianza necesaria para que el alumno adquiera autonomía y buena integración grupal.",
+      icon: "uil uil-heart",
     },
     {
       title: "RESPETO POR LAS DIFERENCIAS Y FORMACIÓN NTEGRAL",
-      content: "Contamos con una educación integral, inclusiva y de calidad, fomentando una cultura de paz a través del desarrollo de los valores.",
-      icon: "uil uil-star"
-    }
+      content:
+        "Contamos con una educación integral, inclusiva y de calidad, fomentando una cultura de paz a través del desarrollo de los valores.",
+      icon: "uil uil-star",
+    },
   ];
 
   /**
    * Client Testimonial Data
    */
-  testimonialData = [
+  imageSlider = [
     {
-      profile: "assets/images/client/01.jpg",
-      name: "Thomas Israel",
-      designation: "C.E.O",
-      message: `" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "`,
+      img: "assets/images/about.jpg",
     },
     {
-      profile: "assets/images/client/02.jpg",
-      name: "Barbara McIntosh",
-      designation: "M.D",
-      message: `" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "`,
+      img: "assets/images/about-2.jpg",
     },
     {
-      profile: "assets/images/client/03.jpg",
-      name: "Carl Oliver",
-      designation: "P.A",
-      message: `" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "`,
+      img: "assets/images/about-3.jpg",
     },
     {
-      profile: "assets/images/client/04.jpg",
-      name: "Christa Smith",
-      designation: "Manager",
-      message: `" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "`,
+      img: "assets/images/about-4.jpg",
     },
     {
-      profile: "assets/images/client/05.jpg",
-      name: "Dean Tolle",
-      designation: "Developer",
-      message: `" There is now an abundance of readable dummy texts. These are usually used when a text is required. "`,
+      img: "assets/images/about-5.jpg",
     },
     {
-      profile: "assets/images/client/06.jpg",
-      name: "Jill Webb",
-      designation: "Designer",
-      message: `" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. "`,
+      img: "assets/images/about-5.jpg",
     },
   ];
 

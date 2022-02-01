@@ -4,20 +4,20 @@ body * {
 
 .owl-theme .owl-dots .owl-dot span {
   border-radius: 3px !important;
-  background: rgba(47, 85, 212, 0.5) !important;
+  background: rgba(182, 20, 26, 0.5) !important;
   -webkit-transition: all 0.5s ease !important;
   transition: all 0.5s ease !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots.clickable .owl-dot:hover span {
-  background: #2f55d4 !important;
+  background: #b6141a !important;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .owl-theme .owl-nav span {
-  background: #2f55d4 !important;
+  background: #b6141a !important;
 }
 
 .accordion .card {

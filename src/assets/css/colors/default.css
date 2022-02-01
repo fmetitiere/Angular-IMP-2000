@@ -161,7 +161,7 @@
 }
 
 .event-schedule .date .day {
-    box-shadow: 0px 0px 2px 0.25px rgba(47, 85, 212, 0.5);
+    box-shadow: 0px 0px 2px 0.25px rgba(182, 20, 26, 0.5);
 }
 
 .btn-primary,
@@ -178,8 +178,8 @@
 .alert-primary,
 .pagination .page-item .page-link:hover,
 ::selection {
-    background: rgba(47, 85, 212, 0.9);
-    border-color: rgba(47, 85, 212, 0.9);
+    background: rgba(182, 20, 26, 0.9);
+    border-color: rgba(182, 20, 26, 0.9);
 }
 
 .social-icon li a:hover .fea-social {
@@ -187,17 +187,17 @@
 }
 
 .bg-circle-gradiant {
-    background: radial-gradient(circle at 50% 50%, rgba(182, 20, 26, 0.1) 0%, rgba(182, 20, 26, 0.1) 33.333%, rgba(182, 20, 26, 0.3) 33.333%, rgba(182, 20, 26, 0.3) 66.666%, rgba(47, 85, 212, 0.5) 66.666%, rgba(47, 85, 212, 0.5) 99.999%);
+    background: radial-gradient(circle at 50% 50%, rgba(182, 20, 26, 0.1) 0%, rgba(182, 20, 26, 0.1) 33.333%, rgba(182, 20, 26, 0.3) 33.333%, rgba(182, 20, 26, 0.3) 66.666%, rgba(182, 20, 26, 0.5) 66.666%, rgba(182, 20, 26, 0.5) 99.999%);
 }
 
 .tns-nav button {
-    background: rgba(47, 85, 212, 0.5) !important;
+    background: rgba(182, 20, 26, 0.5) !important;
 }
 
 .classic-app-image .bg-app-shape:after,
 .classic-saas-image .bg-saas-shape:after,
 .freelance-hero .bg-shape:after {
-    box-shadow: 0 0 40px rgba(47, 85, 212, 0.5);
+    box-shadow: 0 0 40px rgba(182, 20, 26, 0.5);
 }
 
 .freelance-hero .bg-shape:after {
@@ -205,7 +205,7 @@
 }
 
 .key-feature .icon {
-    background: linear-gradient(45deg, transparent, rgba(47, 85, 212, 0.15));
+    background: linear-gradient(45deg, transparent, rgba(182, 20, 26, 0.15));
 }
 
 .features .image:before {

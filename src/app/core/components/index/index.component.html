@@ -28,7 +28,7 @@
               ></p>
 
               <div *ngIf="item.linkLabel" class="mt-4 pt-2">
-                <a [href]="item.linkUrl" class="btn btn-primary">{{
+                <a [routerLink]="item.linkUrl" class="btn btn-primary">{{
                   item.linkLabel
                 }}</a>
               </div>
@@ -84,9 +84,16 @@
   <div class="container mt-100 mt-60">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
-        <div class="position-relative">
-          <img src="assets/images/about.jpg" class="img-fluid mx-auto" alt="" />
-        </div>
+        <owl-carousel-o id="customer-testi" [options]="customOptions">
+          <ng-container *ngFor="let data of imageSlider">
+            <ng-template carouselSlide>
+              <img
+                src="{{ data.img }}"
+                alt=""
+              />
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
       </div>
       <!--end col-->
 
