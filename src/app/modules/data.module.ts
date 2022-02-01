@@ -4,6 +4,7 @@ export interface Carousel {
   linkLabel?: string;
   linkUrl?: string;
   image: string;
+  hasWhatsapp?: boolean;
 }
 
 export interface CardsHome {

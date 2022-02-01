@@ -24,7 +24,7 @@ export class IndexComponent implements OnInit {
   public config: SwiperOptions = {
     a11y: { enabled: true },
     direction: 'horizontal',
-    autoplay: false,
+    autoplay: true,
     loop: true,
     parallax: true,
     speed: 1500,
@@ -56,7 +56,7 @@ export class IndexComponent implements OnInit {
       content: 'TRANSFORMANDO EL PRESENTE CONSTRUYENDO EL FUTURO',
       image: 'assets/images/school-front.jpg',
       linkLabel: 'Contáctanos',
-      linkUrl: '/contact',
+      hasWhatsapp: true
     },
     {
       title: 'Instituto Modelo Proyecto 2000',

@@ -26,9 +26,15 @@
                 [innerText]="item.content"
                 class="para-desc mx-auto text-white"
               ></p>
-
-              <div *ngIf="item.linkLabel" class="mt-4 pt-2">
-                <a [routerLink]="item.linkUrl" class="btn btn-primary">{{
+              <div *ngIf="item.hasWhatsapp" class="mt-4 pt-2">
+                <a
+                  href="whatsapp://send?text=Tu mensaje&phone=+541125240916"
+                  class="btn btn-primary"
+                  >{{ item.linkLabel }}</a
+                >
+              </div>
+              <div *ngIf="item.linkUrl" class="mt-4 pt-2">
+                <a [href]="item.linkUrl" class="btn btn-primary">{{
                   item.linkLabel
                 }}</a>
               </div>
@@ -87,10 +93,7 @@
         <owl-carousel-o id="customer-testi" [options]="customOptions">
           <ng-container *ngFor="let data of imageSlider">
             <ng-template carouselSlide>
-              <img
-                src="{{ data.img }}"
-                alt=""
-              />
+              <img src="{{ data.img }}" alt="" />
             </ng-template>
           </ng-container>
         </owl-carousel-o>
@@ -163,11 +166,222 @@
 <!--end container-->
 <!-- Features End -->
 
+<section class="bg-light">
+  <div class="container section mt-100 mt-60">
+    <div class="col-12 text-center">
+      <div class="section-title mb-4 pb-2">
+        <h4 class="title mb-4">Plan Pedagógico</h4>
+        <p class="text-muted para-desc mb-0 mx-auto">
+          PLAN DE PRIMARIA RESOLUCION 162 DEL 2016 PLAN DE POST PRIMARIA R.S.E
+          195/03
+        </p>
+      </div>
+    </div>
+    <!--end col-->
+    <!--end row-->
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 mb-sm-5 pt-sm-0">
+            <div class="position-relative">
+              <img
+                src="assets/images/plan-1.jpg"
+                class="rounded img-fluid mx-auto d-block"
+                alt=""
+              />
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="section-title ms-lg-4">
+              <h4 class="title mb-4">
+                Trabajamos con niños/as y adolescentes, que presentan
+                dificultades en las áreas cognitiva y/o afectivo comunicacional
+              </h4>
+              <p class="text-muted">
+                En donde requieren de un plan educativo de acuerdo a sus tiempos
+                y posibilidades, así como de una
+                <span class="text-primary fw-bold"
+                  >adaptación curricular adecuada a sus necesidades
+                  particulares</span
+                >.
+              </p>
+              <p class="text-muted">
+                Nuestros programas educativos están basados en los lineamientos
+                curriculares del Ministerio de Educación de la Ciudad de Buenos
+                Aires, con las modificaciones necesarias que exige la educación
+                de alumnos con las mencionadas particularidades. Nuestros
+                diseños curriculares se aplican con la
+                <span class="text-primary fw-bold"
+                  >modalidad psicopedagógica de asistencia personalizada</span
+                >.
+              </p>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <div class="row align-items-center mt-5">
+          <!--end col-->
+
+          <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="section-title ms-lg-4">
+              <h4 class="title mb-4">Nuestros objetivos fundamentales son:</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">
+                  Implementar un dispositivo que brinde a los alumnos
+                  <span class="text-primary fw-bold"
+                    >la contención, el afecto y el cuidado que necesitan</span
+                  >
+                  y que les permita desarrollar una actitud de apertura afectiva
+                  y cognitiva hacia los objetos de aprendizaje.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Brindar a los alumnos un
+                  <span class="text-primary fw-bold">ámbito controlado</span> en
+                  el que puedan descubrir sus capacidades particulares,
+                  desarrollarlas y utilizarlas para desenvolverse en el mundo
+                  real.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Que aprendan a utilizar conductas socialmente aceptadas, que
+                  les permitan integrarse a
+                  <span class="text-primary fw-bold"
+                    >la comunidad a la que pertenecen</span
+                  >.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Que
+                  <span class="text-primary fw-bold"
+                    >desarrollen actitudes</span
+                  >
+                  de respeto por las diferencias, cooperación, trabajo en equipo
+                  y solidaridad.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Que adquieran comportamientos de
+                  <span class="text-primary fw-bold"
+                    >cuidado personal y respeto por la vida</span
+                  >
+                  propia y ajena.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Que
+                  <span class="text-primary fw-bold"
+                    >desarrollen una actitud de cuidado</span
+                  >
+                  hacia el medio ambiente, respetando y valorando las diferentes
+                  manifestaciones de la vida.
+                </li>
+                <li class="list-group-item bg-transparent">
+                  Que adopten gradualmente una actitud autónoma, que les permita
+                  desenvolverse en el mundo,
+                  <span class="text-primary fw-bold"
+                    >desplegando sus potencialidades</span
+                  >.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0 mt-sm-5">
+            <div class="position-relative">
+              <img
+                src="assets/images/plan-2.jpg"
+                class="rounded img-fluid mx-auto d-block"
+                alt=""
+              />
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+    <!--end row-->
+  </div>
+</section>
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 mt-4 pt-2">
-        <contact></contact>
+        <div class="title-heading ms-lg-4">
+          <h4 class="mb-4">Contáctanos</h4>
+          <p class="text-muted">
+            Start working with
+            <span class="text-primary fw-bold">Landrick</span> that can provide
+            everything you need to generate awareness, drive traffic, connect.
+          </p>
+          <div class="d-flex contact-detail align-items-center mt-3">
+            <div class="icon">
+              <i-feather
+                name="mail"
+                class="fea icon-m-md text-dark me-3"
+              ></i-feather>
+            </div>
+            <div class="flex-1 content">
+              <h6 class="title fw-bold mb-0">Email</h6>
+              <a href="mailto:info@proyecto2000.edu.ar" class="text-primary"
+                >info@proyecto2000.edu.ar</a
+              >
+            </div>
+          </div>
+
+          <div class="d-flex contact-detail align-items-center mt-3">
+            <div class="icon">
+              <i-feather
+                name="phone"
+                class="fea icon-m-md text-dark me-3"
+              ></i-feather>
+            </div>
+            <div class="flex-1 content">
+              <h6 class="title fw-bold mb-0">Teléfono</h6>
+              <a href="tel:+5411-4432-8299" class="text-primary"
+                >+5411 4432-8299 / 6079-3693</a
+              >
+            </div>
+          </div>
+
+          <div class="d-flex contact-detail align-items-center mt-3">
+            <div class="icon">
+              <i-feather
+                name="map-pin"
+                class="fea icon-m-md text-dark me-3"
+              ></i-feather>
+            </div>
+            <div class="flex-1 content">
+              <h6 class="title fw-bold mb-0">Dirección</h6>
+
+              <a
+                (click)="mapView(content)"
+                data-type="iframe"
+                class="video-play-icon text-primary"
+                >Ver en Google Maps</a
+              >
+              <ng-template #content let-modal>
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    (click)="modal.dismiss('Cross click')"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.699649591425!2d-58.4497557!3d-34.6123811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4fb8dfb77cc8e57!2sInstituto%20Modelo%20Proyecto%202000!5e0!3m2!1ses-419!2sar!4v1643666171068!5m2!1ses-419!2sar"
+                    height="450"
+                    width="750"
+                  >
+                  </iframe>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-lg-8 col-md-6 ps-md-3 pr-md-3 mt-4 pt-2">
         <div class="card map map-height-two rounded map-gray border-0">
