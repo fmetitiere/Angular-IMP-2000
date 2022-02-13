@@ -15,9 +15,7 @@ export class AppComponent implements OnInit {
      * Unicons icon refreshed on route change.
      */
     this.router.events.forEach((event) => {
-      if (event instanceof NavigationEnd) {
-        window.Unicons.refresh();
-      }
+     
 
       if (!(event instanceof NavigationEnd)) {
         return;

@@ -74,12 +74,7 @@ export class HeaderComponent implements OnInit {
       // reset menu
       resetParent(links[i]);
     }
-    for (let i = 0; i < links.length; i++) {
-      if (window.location.pathname === links[i].pathname) {
-        matchingMenuItem = links[i];
-        break;
-      }
-    }
+ 
 
     if (matchingMenuItem) {
       matchingMenuItem.classList.add('active');
