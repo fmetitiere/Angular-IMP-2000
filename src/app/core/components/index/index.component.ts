@@ -17,6 +17,8 @@ import { Carousel, CardsHome } from 'src/app/modules/data.module';
 export class IndexComponent implements OnInit {
   constructor(private modalService: NgbModal) {}
 
+  year = new Date().getFullYear();
+  
   /**
    * Nav Bg Class Add
    */
@@ -52,7 +54,7 @@ export class IndexComponent implements OnInit {
 
   carousel: Carousel[] = [
     {
-      title: 'INSCRIPCIONES ABIERTAS! CICLO LECTIVO 2022',
+      title: `INSCRIPCIONES ABIERTAS ${this.year}!`,
       content: 'TRANSFORMANDO EL PRESENTE CONSTRUYENDO EL FUTURO',
       image: 'assets/images/school-front.jpg',
       linkLabel: 'Contáctanos',
@@ -96,7 +98,7 @@ export class IndexComponent implements OnInit {
     {
       title: 'PERSONAL CON GRAN CALIDAD HUMANA E IDONEIDAD PROFESIONAL',
       content:
-        'La escuela cuenta con excelentes profesionales de enseñanza especial, capaces de adaptarse a las dificultades de cada niño y niña a través de prácticas didácticas especīficas.',
+        'La escuela cuenta con excelentes profesionales de enseñanza especial, capaces de adaptarse a las dificultades de cada niño y niña a través de prácticas didácticas específicas.',
       icon: 'uil uil-user-square',
     },
     {
